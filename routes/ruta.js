@@ -1,6 +1,6 @@
 const express = require('express');
 const rutaGeneral = express.Router();
-
+var zxcvbn = require('zxcvbn');
 
 rutaGeneral.get('/', async (req, res) => {
     res.render("login/login", { mensaje: null });
